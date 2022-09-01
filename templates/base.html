@@ -1,0 +1,43 @@
+<html>
+<head>
+<title> Poll App By Suraj Godse </title>
+<style>
+* { font-size:30px; font-family:Bradley Hand ITC }	
+.nav { background-color:coral; }
+.nav a { color:white; text-decoration:none; margin:50px	 }
+textarea { resize:none; }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: coral;
+   color: white;
+   text-align: center;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<center>
+	<div class="nav">
+		<a href="{% url 'home' %}"> Home </a>
+		<a href="{% url 'create' %}"> Create </a>
+	</div>
+
+
+	{% block content %}
+	{%  endblock %}
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+            <a href="#"><i class="icon ion-social-instagram"></i></a>
+            <a href="#"><i class="icon ion-social-snapchat"></i></a>
+            <a href="#"><i class="icon ion-social-twitter"></i></a>
+            <a href="#"><i class="icon ion-social-facebook"></i></a>
+    </div> 
+        </footer>
+    </div>
+</center>
+</body>
+</html>
